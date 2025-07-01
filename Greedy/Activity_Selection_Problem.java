@@ -5,7 +5,7 @@ public class Activity_Selection_Problem {
         Arrays.sort(arr,(a,b)->a[1]-b[1]);
         int curr=arr[0][1],ans=1;
         for(int i=1;i<arr.length;i++){
-            if(arr[i][0]>=curr){
+            if(arr[i][0]>curr){
                 ans++;
                 curr=arr[i][1];
             }
